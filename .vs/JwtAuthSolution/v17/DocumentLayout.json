@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\JWT Implementation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82289953-00B2-407A-8A28-F5DC75E384AE}|JwtAuth.Shared\\JwtAuth.Shared.csproj|f:\\jwt implementation\\jwtauth.shared\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82289953-00B2-407A-8A28-F5DC75E384AE}|JwtAuth.Shared\\JwtAuth.Shared.csproj|solutionrelative:jwtauth.shared\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|f:\\jwt implementation\\jwtauth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|solutionrelative:jwtauth.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|f:\\jwt implementation\\jwtauth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|solutionrelative:jwtauth.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B238D4FC-F54B-4F62-A426-EA6C788938DF}|JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj|f:\\jwt implementation\\jwtauth.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B238D4FC-F54B-4F62-A426-EA6C788938DF}|JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj|solutionrelative:jwtauth.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|f:\\jwt implementation\\jwtauth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|solutionrelative:jwtauth.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82289953-00B2-407A-8A28-F5DC75E384AE}|JwtAuth.Shared\\JwtAuth.Shared.csproj|f:\\jwt implementation\\jwtauth.shared\\dtos\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82289953-00B2-407A-8A28-F5DC75E384AE}|JwtAuth.Shared\\JwtAuth.Shared.csproj|solutionrelative:jwtauth.shared\\dtos\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|f:\\jwt implementation\\jwtauth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CE189E8C-13C4-4E65-B139-47069C3B915C}|JwtAuth.API\\JwtAuth.API.csproj|solutionrelative:jwtauth.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "JwtAuth.API\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "JwtAuth.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T09:42:23.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.API\\appsettings.json",
+              "RelativeDocumentMoniker": "JwtAuth.API\\appsettings.json",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.API\\appsettings.json",
+              "RelativeToolTip": "JwtAuth.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T02:42:19.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "JwtAuth.API\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "JwtAuth.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:40:15.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "JwtAuth.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "JwtAuth.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwEEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T03:04:01.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.Shared\\DTOs\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "JwtAuth.Shared\\DTOs\\LoginRequest.cs",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.Shared\\DTOs\\LoginRequest.cs",
+              "RelativeToolTip": "JwtAuth.Shared\\DTOs\\LoginRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T05:50:15.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.Shared\\DTOs\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "JwtAuth.Shared\\DTOs\\RefreshToken.cs",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.Shared\\DTOs\\RefreshToken.cs",
+              "RelativeToolTip": "JwtAuth.Shared\\DTOs\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T03:01:39.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\JWT Implementation\\JwtAuth.API\\Program.cs",
+              "RelativeDocumentMoniker": "JwtAuth.API\\Program.cs",
+              "ToolTip": "F:\\JWT Implementation\\JwtAuth.API\\Program.cs",
+              "RelativeToolTip": "JwtAuth.API\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwEoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T02:15:02.698Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
