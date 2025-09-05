@@ -14,8 +14,12 @@ public class AuthController : Controller
     }
 
     [HttpGet]
-    public IActionResult Login()
+    public IActionResult Login(string? message)
     {
+        if (message == "expired")
+        {
+            ViewBag.Message = "Your session has expired, please login again.";
+        }
         return View(new LoginViewModel());
     }
 
@@ -29,28 +33,25 @@ public class AuthController : Controller
                                      .ToList();
             return View(model);
         }
-            
+
 
         var client = _httpClientFactory.CreateClient();
-        client.BaseAddress = new Uri("http://localhost:5113/"); 
-
-        var response = await client.PostAsJsonAsync("api/auth/login", new
-        {
-            Username = model.Username,
-            Password = model.Password
-        });
-
+        var response = await client.PostAsJsonAsync("http://localhost:5113/api/auth/login", model);
         if (response.IsSuccessStatusCode)
         {
-            var result = await response.Content.ReadFromJsonAsync<JsonElement>();
-            string token = result.GetProperty("accessToken").GetString();
-            HttpContext.Session.SetString("JwtToken", token);
+            var tokens = await response.Content.ReadFromJsonAsync<TokenResponse>();
+            // Session-এ token এবং expiry সময় রাখা
+            HttpContext.Session.SetString("AccessToken", tokens.AccessToken);
+            HttpContext.Session.SetString("RefreshToken", tokens.RefreshToken);
+            //HttpContext.Session.SetString("TokenExpiry", DateTime.UtcNow.AddMinutes(15).ToString());
+            HttpContext.Session.SetString("TokenExpiry", tokens.Expiration.ToString());
 
-
-            return RedirectToAction("Index", "Home"); // Secure Page / Dashboard
+            return RedirectToAction("Index", "Home");
         }
 
         model.ErrorMessage = "Invalid username or password";
         return View(model);
     }
+
+
 }

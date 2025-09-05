@@ -1,6 +1,12 @@
 ﻿@model LoginViewModel
 
 <h2>Login</h2>
+@if (ViewBag.Message != null)
+{
+    <div style="color:red; font-weight:bold; margin:10px 0;">
+        @ViewBag.Message
+    </div>
+}
 <form method="post" asp-action="Login">
     <div>
         <label asp-for="Username"></label>
@@ -20,4 +26,18 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+
+  @*   <script
+        var tokenExpiry = new Date('@HttpContext.Session.GetString("TokenExpiry")');
+        var now = new Date();
+
+        var timeout = tokenExpiry - now;
+        if(timeout > 0) {
+            setTimeout(function(){
+                alert("আপনার সেশন শেষ হয়ে গেছে। আবার লগইন করতে হবে।");
+                window.location.href = '/Account/Login';
+            }, timeout);
+        }
+    </script> *@
+
 }

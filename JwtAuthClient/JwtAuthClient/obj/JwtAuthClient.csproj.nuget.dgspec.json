@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {}
+    "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {}
   },
   "projects": {
-    "F:\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {
+    "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+        "projectUniqueName": "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
         "projectName": "JwtAuthClient",
-        "projectPath": "F:\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+        "projectPath": "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\JwtAuthClient\\JwtAuthClient\\obj\\",
+        "outputPath": "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

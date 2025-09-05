@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
+    "F:\\JWT_Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
   },
   "projects": {
-    "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
+    "F:\\JWT_Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "projectUniqueName": "F:\\JWT_Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
         "projectName": "JwtAuth.Shared",
-        "projectPath": "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "projectPath": "F:\\JWT_Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\JWT-Implementation\\JwtAuth.Shared\\obj\\",
+        "outputPath": "F:\\JWT_Implementation\\API_Project\\JwtAuth.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
