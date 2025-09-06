@@ -46,7 +46,8 @@ public class TokenService
         {
             Token = Guid.NewGuid().ToString(),
             Username = username,
-            ExpiryDate = DateTime.Now.AddDays(7) // 7 days valid
+            //ExpiryDate = DateTime.Now.AddDays(7) // 7 days valid
+            ExpiryDate = DateTime.Now.AddMinutes(2) // 2 minutes valid
         };
         refreshTokens.Add(refreshToken);
 

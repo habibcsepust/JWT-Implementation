@@ -1,12 +1,15 @@
 ﻿using JwtAuthClient.Middleware;
-using static AuthController;
+using JwtAuthClient.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// MVC / Razor View support
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient();
-//builder.Services.AddSession();     
 
+// HttpClient factory
+builder.Services.AddHttpClient();
+
+// Session support
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -15,17 +18,29 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+// HttpContextAccessor for session in services
+builder.Services.AddHttpContextAccessor();
 
+// Custom service
+builder.Services.AddScoped<TokenManager>();
 
 var app = builder.Build();
 
 app.UseStaticFiles();
+
 app.UseRouting();
+
+// 👉 অবশ্যই session আগে enable করতে হবে
 app.UseSession();
-app.UseMiddleware<AutoLogoutMiddleware>();
+
+// 👉 RefreshTokenMiddleware auto session check করবে
+app.UseMiddleware<RefreshTokenMiddleware>();
+
 app.UseAuthorization();
+
+// 👉 Default route
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Auth}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}"); // Login successful হলে Home এ যাবে
 
 app.Run();
