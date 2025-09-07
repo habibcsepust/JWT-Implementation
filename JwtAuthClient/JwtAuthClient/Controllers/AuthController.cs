@@ -3,15 +3,18 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
+using System.Net.Http.Json;
 
 public class AuthController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
-
-    public AuthController(IHttpClientFactory httpClientFactory)
+    private readonly IConfiguration _config;
+    public AuthController(IHttpClientFactory httpClientFactory, IConfiguration config)
     {
         _httpClientFactory = httpClientFactory;
+        _config = config;
     }
+
 
     [HttpGet]
     public IActionResult Login(string? message)
@@ -36,7 +39,11 @@ public class AuthController : Controller
 
 
         var client = _httpClientFactory.CreateClient();
-        var response = await client.PostAsJsonAsync("http://localhost:5113/api/auth/login", model);
+        
+        //var response = await client.PostAsJsonAsync("http://localhost:5113/api/auth/login", model);
+        string baseUrl = _config["ApiSettings:BaseUrl"];
+        var response = await client.PostAsJsonAsync($"{baseUrl}auth/login", model);
+
         if (response.IsSuccessStatusCode)
         {
             var tokens = await response.Content.ReadFromJsonAsync<TokenResponse>();

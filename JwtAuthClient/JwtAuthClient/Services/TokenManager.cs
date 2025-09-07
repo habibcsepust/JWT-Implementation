@@ -2,16 +2,19 @@
 {
     using JwtAuthClient.Models;
     using System.Net.Http.Json;
+    using System.Reflection;
 
     public class TokenManager
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IConfiguration _config;
 
-        public TokenManager(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor)
+        public TokenManager(IHttpClientFactory httpClientFactory, IHttpContextAccessor httpContextAccessor, IConfiguration config)
         {
             _httpClientFactory = httpClientFactory;
             _httpContextAccessor = httpContextAccessor;
+            _config = config;
         }
 
         public async Task<bool> EnsureValidAccessTokenAsync()
@@ -31,7 +34,9 @@
             if (DateTime.UtcNow >= expiry && !string.IsNullOrEmpty(refreshToken))
             {
                 var client = _httpClientFactory.CreateClient();
-                var response = await client.PostAsJsonAsync("http://localhost:5113/api/auth/refresh", refreshToken);
+                //var response = await client.PostAsJsonAsync("http://localhost:5113/api/auth/refresh", refreshToken);
+                string baseUrl = _config["ApiSettings:BaseUrl"];
+                var response = await client.PostAsJsonAsync($"{baseUrl}auth/refresh", refreshToken);
 
                 if (response.IsSuccessStatusCode)
                 {

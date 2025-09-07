@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r5jq1MbTNwY=",
+  "dgSpecHash": "bjjclE727WI=",
   "success": true,
-  "projectFilePath": "F:\\JWT_Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+  "projectFilePath": "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
