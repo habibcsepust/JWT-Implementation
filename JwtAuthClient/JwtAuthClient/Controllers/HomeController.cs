@@ -1,9 +1,11 @@
-using System.Diagnostics;
 using JwtAuthClient.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace JwtAuthClient.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -13,11 +15,13 @@ namespace JwtAuthClient.Controllers
             _logger = logger;
         }
 
+        [Authorize(Roles = "admin,user")]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize(Roles = "user")]
         public IActionResult Privacy()
         {
             return View();

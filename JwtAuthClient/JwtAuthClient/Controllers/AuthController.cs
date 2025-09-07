@@ -1,9 +1,11 @@
 ﻿using JwtAuthClient.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http;
 using System.Net.Http.Json;
-using System.Text.Json;
 using System.Net.Http.Json;
+using System.Security.Claims;
+using System.Text.Json;
 
 public class AuthController : Controller
 {
@@ -53,6 +55,23 @@ public class AuthController : Controller
             //HttpContext.Session.SetString("TokenExpiry", DateTime.UtcNow.AddMinutes(15).ToString());
             HttpContext.Session.SetString("TokenExpiry", tokens.Expiration.ToString());
 
+            // Get Role from Token
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(tokens.AccessToken);
+
+            var role = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+            // Redirect as per role
+            if (role == "user")
+            {
+                return RedirectToAction("Privacy", "Home");
+            }
+            else if (role == "admin")
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            // Default redirect
             return RedirectToAction("Index", "Home");
         }
 

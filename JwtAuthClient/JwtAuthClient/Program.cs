@@ -1,5 +1,7 @@
 ﻿using JwtAuthClient.Middleware;
 using JwtAuthClient.Services;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +26,29 @@ builder.Services.AddHttpContextAccessor();
 // Custom service
 builder.Services.AddScoped<TokenManager>();
 
+
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+            ValidAudience = builder.Configuration["JwtSettings:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]))
+        };
+    });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("UserPolicy", policy => policy.RequireRole("user"));
+    options.AddPolicy("AdminPolicy", policy => policy.RequireRole("admin"));
+});
+
 var app = builder.Build();
 
 app.UseStaticFiles();
@@ -36,6 +61,7 @@ app.UseSession();
 // 👉 RefreshTokenMiddleware auto session check করবে
 app.UseMiddleware<RefreshTokenMiddleware>();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 // 👉 Default route
