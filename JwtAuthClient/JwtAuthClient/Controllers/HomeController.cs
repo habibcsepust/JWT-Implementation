@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace JwtAuthClient.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -15,13 +15,13 @@ namespace JwtAuthClient.Controllers
             _logger = logger;
         }
 
-        [Authorize(Roles = "admin,user")]
+        //[Authorize(Roles = "admin,user")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Authorize(Roles = "user")]
+        //[Authorize(Roles = "user")]
         public IActionResult Privacy()
         {
             return View();

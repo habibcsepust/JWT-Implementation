@@ -18,10 +18,17 @@ public class TokenService
     public AuthResponse GenerateTokens(string username, List<string> roles)
     {
         // Claims
+        //var claims = new List<Claim>
+        //{
+        //    new Claim(JwtRegisteredClaimNames.Sub, username),
+        //    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        //};
+
         var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Sub, username),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, "user") // বা "admin"
         };
 
         foreach (var role in roles)
