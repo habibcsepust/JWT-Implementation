@@ -1,27 +1,3 @@
-F:\JWT\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.deps.json
-F:\JWT\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.dll
-F:\JWT\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.pdb
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.GeneratedMSBuildEditorConfig.editorconfig
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfoInputs.cache
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfo.cs
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.csproj.CoreCompileInputs.cache
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.sourcelink.json
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.dll
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\refint\JwtAuth.Shared.dll
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.pdb
-F:\JWT\JwtAuth.Shared\obj\Debug\net9.0\ref\JwtAuth.Shared.dll
-F:\JWT Implementation\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.deps.json
-F:\JWT Implementation\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.dll
-F:\JWT Implementation\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.pdb
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.GeneratedMSBuildEditorConfig.editorconfig
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfoInputs.cache
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfo.cs
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.csproj.CoreCompileInputs.cache
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.sourcelink.json
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.dll
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\refint\JwtAuth.Shared.dll
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.pdb
-F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\ref\JwtAuth.Shared.dll
 E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.deps.json
 E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.dll
 E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.pdb

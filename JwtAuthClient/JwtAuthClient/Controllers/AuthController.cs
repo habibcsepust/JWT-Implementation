@@ -5,38 +5,42 @@ using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Net.Http.Json;
 using System.Security.Claims;
 using System.Text.Json;
 
 public class AuthController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
-
-    public AuthController(IHttpClientFactory httpClientFactory)
+    private readonly IConfiguration _config;
+    public AuthController(IHttpClientFactory httpClientFactory, IConfiguration config)
     {
         _httpClientFactory = httpClientFactory;
+        _config = config;
     }
 
+
     [HttpGet]
-    public IActionResult Login()
+    public IActionResult Login(string? message)
     {
+        if (message == "expired")
+        {
+            ViewBag.Message = "Your session has expired, please login again.";
+        }
         return View(new LoginViewModel());
     }
 
     [HttpPost]
-    [HttpPost]
     public async Task<IActionResult> Login(LoginViewModel model)
     {
+        // 1️⃣ Model validation
         if (!ModelState.IsValid)
         {
-            var errors = ModelState.Values
-                                   .SelectMany(v => v.Errors)
-                                   .Select(e => e.ErrorMessage)
-                                   .ToList();
-            // আপনি চাইলে errors TempData বা ViewBag এ পাঠাতে পারেন
+            model.ErrorMessage = "Please provide valid credentials.";
             return View(model);
         }
 
+        // 2️⃣ Call API for login
         var client = _httpClientFactory.CreateClient();
         client.BaseAddress = new Uri("http://localhost:5113/");
 
@@ -48,49 +52,46 @@ public class AuthController : Controller
 
         if (!response.IsSuccessStatusCode)
         {
-            model.ErrorMessage = "Invalid username or password";
+            model.ErrorMessage = "Invalid username or password.";
             return View(model);
         }
 
+        // 3️⃣ Parse token response
         var tokens = await response.Content.ReadFromJsonAsync<TokenResponse>();
-
         if (tokens == null || string.IsNullOrEmpty(tokens.AccessToken))
         {
             model.ErrorMessage = "Failed to retrieve access token.";
             return View(model);
         }
 
-        // ✅ Token save to Session
+        // 4️⃣ Save tokens in Session
         HttpContext.Session.SetString("AccessToken", tokens.AccessToken);
-        HttpContext.Session.SetString("RefreshToken", tokens.RefreshToken);
+        HttpContext.Session.SetString("RefreshToken", tokens.RefreshToken ?? "");
         HttpContext.Session.SetString("TokenExpiry", tokens.Expiration.ToString());
 
-        // Build User Authorize/Identity from JWT
+        // 5️⃣ Extract claims from JWT
         var handler = new JwtSecurityTokenHandler();
         var jwtToken = handler.ReadJwtToken(tokens.AccessToken);
 
-        // Claims identity
         var claims = jwtToken.Claims.ToList();
         var identity = new ClaimsIdentity(claims, "Cookies");
         var principal = new ClaimsPrincipal(identity);
 
-        // Cookie Authentication ব্যবহার করে login
+        // 6️⃣ Sign-in with Cookie Authentication
         await HttpContext.SignInAsync("Cookies", principal);
 
-
-        // Role based redirect
+        // 7️⃣ Role-based redirect
         var role = claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-
-        //if (role == "user")
-        //{
-        //    return RedirectToAction("Index", "Home");
-        //}
-        //else if (role == "admin")
+        //if (role == "admin")
         //{
         //    return RedirectToAction("Privacy", "Home");
         //}
+        //else if (role == "user")
+        //{
+        //    return RedirectToAction("Index", "Home");
+        //}
 
-        // Default fallback
+        // 8️⃣ Default fallback
         return RedirectToAction("Index", "Home");
     }
 

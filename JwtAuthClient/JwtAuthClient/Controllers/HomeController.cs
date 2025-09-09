@@ -15,7 +15,6 @@ namespace JwtAuthClient.Controllers
         {
             _logger = logger;
         }
-
         [Authorize(Roles = "admin")]
         public IActionResult Index()
         {

@@ -1,53 +1,55 @@
-﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using JwtAuthClient.Middleware;
+using JwtAuthClient.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ✅ MVC / Razor View support
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient();   // API call করার জন্য
-builder.Services.AddSession();      // Token save করার জন্য
 
+// ✅ HttpClient factory
+builder.Services.AddHttpClient();
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
-            ValidAudience = builder.Configuration["JwtSettings:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]))
-        };
-    });
+// ✅ Session support
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session lifetime
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
-builder.Services.AddAuthorization();
+// ✅ HttpContextAccessor for session in services
+builder.Services.AddHttpContextAccessor();
 
+// ✅ Custom service
+builder.Services.AddScoped<TokenManager>();
+
+// ✅ Authentication (Cookie ভিত্তিক)
 builder.Services.AddAuthentication("Cookies")
     .AddCookie("Cookies", options =>
     {
-        options.LoginPath = "/Auth/Login"; // যদি authenticated না হয়
+        options.LoginPath = "/Auth/Login";             // যদি login করা না থাকে
         options.AccessDeniedPath = "/Home/Unauthorized"; // যদি role mismatch হয়
     });
 
+// ✅ Authorization
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
-// ---- Middleware Order Important ----
+// Middleware pipeline
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseSession();
+app.UseSession(); // session আগে লাগাতে হবে
+app.UseMiddleware<RefreshTokenMiddleware>();
 
-// ✅ Authentication & Authorization অবশ্যই Routing এর পরে আসতে হবে
 app.UseAuthentication();
 app.UseAuthorization();
 
+// ✅ Default route
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Auth}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
