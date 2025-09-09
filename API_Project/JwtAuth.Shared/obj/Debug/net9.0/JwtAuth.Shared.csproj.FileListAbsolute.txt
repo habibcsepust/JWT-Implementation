@@ -22,3 +22,15 @@ F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.dll
 F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\refint\JwtAuth.Shared.dll
 F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.pdb
 F:\JWT Implementation\JwtAuth.Shared\obj\Debug\net9.0\ref\JwtAuth.Shared.dll
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.deps.json
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.dll
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\bin\Debug\net9.0\JwtAuth.Shared.pdb
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfoInputs.cache
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.AssemblyInfo.cs
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.csproj.CoreCompileInputs.cache
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.sourcelink.json
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.dll
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\refint\JwtAuth.Shared.dll
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\JwtAuth.Shared.pdb
+E:\Habib\JWT\JWT-Implementation\API_Project\JwtAuth.Shared\obj\Debug\net9.0\ref\JwtAuth.Shared.dll

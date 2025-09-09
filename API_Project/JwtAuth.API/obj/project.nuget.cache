@@ -1,38 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "ahMXVrM9M1o=",
+  "dgSpecHash": "bdea/vBSR0Q=",
   "success": true,
-  "projectFilePath": "F:\\JWT-Implementation\\JwtAuth.API\\JwtAuth.API.csproj",
+  "projectFilePath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\JwtAuth.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.8\\microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.14.0\\microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.logging\\8.14.0\\microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.6.25\\microsoft.openapi.1.6.25.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.4\\swashbuckle.aspnetcore.9.0.4.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.4\\swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.4\\swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.4\\swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.14.0\\system.identitymodel.tokens.jwt.8.14.0.nupkg.sha512"
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.8\\microsoft.aspnetcore.authentication.jwtbearer.9.0.8.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.apidescription.server\\9.0.0\\microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.7\\microsoft.extensions.primitives.9.0.7.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.14.0\\microsoft.identitymodel.jsonwebtokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.logging\\8.14.0\\microsoft.identitymodel.logging.8.14.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.protocols\\8.0.1\\microsoft.identitymodel.protocols.8.0.1.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\8.0.1\\microsoft.identitymodel.protocols.openidconnect.8.0.1.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.14.0\\microsoft.identitymodel.tokens.8.14.0.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.openapi\\1.6.25\\microsoft.openapi.1.6.25.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\swashbuckle.aspnetcore\\9.0.4\\swashbuckle.aspnetcore.9.0.4.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\9.0.4\\swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\9.0.4\\swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\9.0.4\\swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512",
+    "C:\\Users\\habibur.it\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.14.0\\system.identitymodel.tokens.jwt.8.14.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "F:\\JWT-Implementation\\JwtAuth.API\\JwtAuth.API.csproj",
-      "warningLevel": 1,
-      "filePath": "F:\\JWT-Implementation\\JwtAuth.API\\JwtAuth.API.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

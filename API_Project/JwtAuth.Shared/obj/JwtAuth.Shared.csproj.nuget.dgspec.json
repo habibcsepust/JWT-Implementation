@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
+    "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
   },
   "projects": {
-    "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
+    "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "projectUniqueName": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
         "projectName": "JwtAuth.Shared",
-        "projectPath": "F:\\JWT-Implementation\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "F:\\JWT-Implementation\\JwtAuth.Shared\\obj\\",
+        "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "packagesPath": "C:\\Users\\habibur.it\\.nuget\\packages\\",
+        "outputPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\habibur.it\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

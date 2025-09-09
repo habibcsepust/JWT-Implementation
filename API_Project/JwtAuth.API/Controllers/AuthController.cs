@@ -16,9 +16,9 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
-        if (request.Username == "admin" && request.Password == "1234")
+        if ((request.Username == "admin" || request.Username == "user") && request.Password == "1234")
         {
-            var tokens = _tokenService.GenerateTokens(request.Username, new List<string> { "Admin" });
+            var tokens = _tokenService.GenerateTokens(request.Username, new List<string> { request.Username });
             return Ok(tokens);
         }
         return Unauthorized();
