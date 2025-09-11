@@ -1068,11 +1068,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\JwtAuth.API.csproj",
+      "projectUniqueName": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\JwtAuth.API.csproj",
       "projectName": "JwtAuth.API",
-      "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\JwtAuth.API.csproj",
+      "projectPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\JwtAuth.API.csproj",
       "packagesPath": "C:\\Users\\habibur.it\\.nuget\\packages\\",
-      "outputPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\obj\\",
+      "outputPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1093,11 +1093,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj": {
-              "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj"
+            "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj": {
+              "projectPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj"
             },
-            "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
-              "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj"
+            "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
+              "projectPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj"
             }
           }
         }

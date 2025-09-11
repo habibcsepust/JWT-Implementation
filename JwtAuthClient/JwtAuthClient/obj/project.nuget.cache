@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sl6FDH7O/aA=",
+  "dgSpecHash": "FPNLYSpYTAk=",
   "success": true,
-  "projectFilePath": "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+  "projectFilePath": "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.8\\microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
     "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.1.2\\microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",

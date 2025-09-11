@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WoOm+BJ+DA4=",
+  "dgSpecHash": "/iZrwnZNdPs=",
   "success": true,
-  "projectFilePath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj",
+  "projectFilePath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Infrastructure\\JwtAuth.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.7\\microsoft.extensions.configuration.abstractions.9.0.7.nupkg.sha512",
     "C:\\Users\\habibur.it\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",

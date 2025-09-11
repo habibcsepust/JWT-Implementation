@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
+    "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {}
   },
   "projects": {
-    "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
+    "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "projectUniqueName": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
         "projectName": "JwtAuth.Shared",
-        "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
+        "projectPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\JwtAuth.Shared.csproj",
         "packagesPath": "C:\\Users\\habibur.it\\.nuget\\packages\\",
-        "outputPath": "E:\\Habib\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\obj\\",
+        "outputPath": "E:\\JWT\\JWT-Implementation\\API_Project\\JwtAuth.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

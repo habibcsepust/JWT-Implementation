@@ -32,7 +32,6 @@ namespace JwtAuthClient.Middleware
                     return;
                 }
             }
-
             await _next(context);
         }
     }

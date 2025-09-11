@@ -1,0 +1,11 @@
+File overview we will create
+----------------------------
+src/main.ts — bootstrap + routes
+src/app/app.component.ts — shell with <router-outlet>
+src/app/login.component.ts — login form
+src/app/dashboard.component.ts — a protected page that calls API
+src/app/services/auth.service.ts — login / refresh / logout
+src/app/services/token-storage.service.ts — localStorage wrapper
+src/app/services/payment.service.ts — example protected API calls
+src/app/interceptors/auth.interceptor.ts — attach token + refresh logic
+src/app/guards/auth.guard.ts — protect routes

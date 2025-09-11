@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {}
+    "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {}
   },
   "projects": {
-    "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {
+    "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+        "projectUniqueName": "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
         "projectName": "JwtAuthClient",
-        "projectPath": "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
+        "projectPath": "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\JwtAuthClient.csproj",
         "packagesPath": "C:\\Users\\habibur.it\\.nuget\\packages\\",
-        "outputPath": "E:\\Habib\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\obj\\",
+        "outputPath": "E:\\JWT\\JWT-Implementation\\JwtAuthClient\\JwtAuthClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
